@@ -17,10 +17,17 @@ public class CarTester {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //Declare the cars
         Car car1;
         Car car2;
         Car car3;
       for(int i = 0; i<=3; i++){
+          /* Asks the user to create a car three times
+          Prints the properties of said car after the car is created
+          1st choice uses full constructor
+          2nd choice uses price only constructor
+          3rd choice suses deafult constructor 
+          */
         String choice = JOptionPane.showInputDialog(
         "Creating SmartPhone object:\n"
         + "1 - Create your own car\n"
@@ -39,7 +46,7 @@ public class CarTester {
            int price = Integer.parseInt(sprice);
            int seats = Integer.parseInt(sseats);
            int year = Integer.parseInt(syear);
-           
+           //prints properties of the car, and sets them
            if(i == 0){
                car1 = new Car(model, thruster, make, year, seats, price);
                System.out.println(car1.toString());
@@ -59,6 +66,7 @@ public class CarTester {
         if(choice.equals("2")){
            String sprice = JOptionPane.showInputDialog("Enter the car's price");
            int price = Integer.parseInt(sprice);
+           //prints properties of the car, and sets them
            if(i == 0){
                car1 = new Car(price);
                System.out.println(car1.toString());
@@ -76,6 +84,7 @@ public class CarTester {
            }
         }
          if(choice.equals("3")){
+             //prints properties of the car, and sets them
               if(i == 0){
                car1 = new Car();
                System.out.println(car1.toString());
