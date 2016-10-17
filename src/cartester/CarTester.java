@@ -29,7 +29,7 @@ public class CarTester {
           3rd choice suses deafult constructor 
           */
         String choice = JOptionPane.showInputDialog(
-        "Creating SmartPhone object:\n"
+        "Creating Car Object:\n"
         + "1 - Create your own car\n"
         + "2 - Create car based on price")
         + "3 - Create a deafult car, I am lazy";
