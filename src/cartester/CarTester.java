@@ -31,7 +31,7 @@ public class CarTester {
         String choice = JOptionPane.showInputDialog(
         "Creating Car Object:\n"
         + "1 - Create your own car\n"
-        + "2 - Create car based on price")
+        + "2 - Create car based on price\n")
         + "3 - Create a deafult car, I am lazy";
       
        if(choice.equals("1")){
